@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import ChatInput from "./ChatInput";
 
 import Message from "./Message";
 import db from "./firebase";
@@ -54,6 +55,7 @@ function Chat() {
 					/>
 				))}
 			</div>
+			<ChatInput channelName={roomDetails?.name} channelId={roomId} />
 		</div>
 	);
 }
