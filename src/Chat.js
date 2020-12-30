@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+
 import Message from "./Message";
 import db from "./firebase";
+
 import "./Chat.css";
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
@@ -26,7 +28,7 @@ function Chat() {
 				setRoomMessages(snapshot.docs.map((doc) => doc.data()))
 			);
 	}, [roomId]);
-	console.log(roomMessages);
+
 	return (
 		<div className="chat">
 			<div className="chat__header">
