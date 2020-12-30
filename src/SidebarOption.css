@@ -9,6 +9,7 @@
 .sidebarOption:hover {
 	background-color: #340e36;
 	opacity: 90%;
+	color: white;
 }
 
 .sidebarOption__icon {
